@@ -2,6 +2,9 @@
 using AddressBookSystem;
 
 AddressBook address = new AddressBook();
+
 address.AddNewContact();
 Console.WriteLine();
 address.Display();
+Console.WriteLine();
+address.EditContact();
