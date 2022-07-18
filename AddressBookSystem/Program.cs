@@ -8,3 +8,5 @@ Console.WriteLine();
 address.Display();
 Console.WriteLine();
 address.EditContact();
+Console.WriteLine();
+address.RemoveContact();

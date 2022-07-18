@@ -84,7 +84,21 @@ namespace AddressBookSystem
             }
             Console.WriteLine("no contact with this firstname");
         }
-
+        public void RemoveContact()
+        {
+            Console.WriteLine("enter the first name you want to remove");
+            string firstname = Console.ReadLine();
+            foreach (Contact contact in contactlist)
+            {
+                if (contact.FirstName.ToLower() == firstname.ToLower())
+                {
+                    contactlist.Remove(contact);
+                    Console.WriteLine("the firstname you have entered is deleted ");
+                    return;
+                }
+            }
+            Console.WriteLine("contact not found");
+        }
         public void Display()
         {
             foreach (Contact contact in contactlist)
